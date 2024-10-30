@@ -1,40 +1,31 @@
-name: Angular Build
+name: Deploy to GitHub Pages
 
-# {1}
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # Change to your default branch if it's not 'main'
 
 jobs:
-  angular:
-    name: Angular Build
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.18]
 
     steps:
-      # {2}
-      - name: Checkout the source code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      # {3}
-      - name: Setup Node.js $
-        uses: actions/setup-node@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: $
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
+          node-version: '20'  # Use a compatible version for Angular
 
-      # {4}
       - name: Install dependencies
-        run: npm ci
-      # {5}
-      - name: Run tests
-        run: npm run test:ci
-      # {6}
-      - name: Build
-        run: npm run build
-        
+        run: npm install
+
+      - name: Build Angular app
+        run: npm run build -- --output-path=docs --base-href='/'
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
