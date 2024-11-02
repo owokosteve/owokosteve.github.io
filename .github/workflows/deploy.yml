@@ -25,11 +25,11 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --output-path=docs
+        run: npm run build -- --output-path=docs/browser
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs/browser
           cname: www.stephenowoko.live
