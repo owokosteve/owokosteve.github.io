@@ -1,8 +1,8 @@
 #hero { position: relative;}
-#hero img { width: 100%; height: auto;}
+#hero img { width: 100%; }
 h1 { color: white; }
 h2:hover { color: var(--secondary);  }
-#intro { background-color: transparent; margin-top: 40px; margin-bottom: 50px;}
+#intro { background-color: transparent; margin-top: 30px; margin-bottom: 50px;}
 h3 { font-size: 2.3rem; color: var(--dark); font-weight: 400; margin-bottom: 10px;}
 p { color: #444; font-size: 1.1rem; line-height: 1.5;}
 #hero figcaption { font-size: .75em; font-style: italic; text-align: end;}
@@ -16,12 +16,12 @@ p { color: #444; font-size: 1.1rem; line-height: 1.5;}
     width: 100%;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: var(--light-75);
         line-height: 1.2;
     }
     p { 
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         color: var(--light-50);
     
     }
@@ -30,12 +30,11 @@ p { color: #444; font-size: 1.1rem; line-height: 1.5;}
 @media only screen and (min-width: 768px) {
     .hero-text{
         h1 {
-            font-size: 5rem;
-            line-height: 1.5;
+            line-height: 1.2;
         }
     
         p {
-            font-size: 1.75rem;
+            font-size: 1.65rem;
         }
     } 
 }
