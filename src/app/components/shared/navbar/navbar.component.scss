@@ -1,0 +1,37 @@
+header {
+    background-color: var(--dark);
+}
+
+.navbar-brand {
+    color: var(--light-75);
+    font-size: 1.75rem;
+    font-family: "roboto_condensedbold", serif;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+}
+
+#tagline {
+    font-size: 1.25rem !important;
+    font-family: "source_sans_probold";
+    color: var(--light-50);
+    display: block;
+    margin-top: -9px !important;
+    padding: 0;
+    text-align: right;
+}
+.nav-link {
+    font-size: 1.15rem;
+    color: var(--light-50);
+    cursor: pointer;
+}
+.navbar-toggler {
+    background-color: var(--light-75) !important;
+}
+.active {
+    color: var(--light-75) !important;
+}
+
+
+.nav-link:hover{
+    color: var(--light-75) !important;
+}
