@@ -1,16 +1,41 @@
-#hero { position: relative; }
+#hero { position: relative;}
 #hero img { width: 100%; height: auto;}
-h2 { color: white; font-family: 'Pacifico', cursive;}
-h2:hover { color: var(--secondary); cursor: pointer; }
+h1 { color: white; }
+h2:hover { color: var(--secondary);  }
 #intro { background-color: transparent; margin-top: 40px; margin-bottom: 50px;}
-h3 { font-size: 2.3rem; font-weight: 400; margin-bottom: 20px;}
+h3 { font-size: 2.3rem; color: var(--dark); font-weight: 400; margin-bottom: 10px;}
 p { color: #444; font-size: 1.1rem; line-height: 1.5;}
-span { color: var(--light); margin-top: 3.3rem; }
-.card-title { margin-top: 15px; font-size: 1.7rem;}
-.card-title a { text-decoration: none; color: var(--primary); font-weight: 400; line-height: 1.5; }
-.card-title a:hover { color: var(--secondary); }
-.card-text { font-size: 1.085rem; color: #666; line-height: 1.6; margin-top: 20px; margin-bottom: 10px; padding: 5px 0;}
-.card-text a { color: var(--secondary); text-decoration: none;}
-.card-text a:hover { text-decoration: underline; }
-.card-link { color: var(--light); text-decoration: none; margin-right: 10px; }
-.card-link i { margin-right: 5px; font-size: 1.2em; }
+#hero figcaption { font-size: .75em; font-style: italic; text-align: end;}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+
+    h1 {
+        font-size: 2.5rem;
+        color: var(--light-75);
+        line-height: 1.2;
+    }
+    p { 
+        font-size: 1.3rem;
+        color: var(--light-50);
+    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-text{
+        h1 {
+            font-size: 5rem;
+            line-height: 1.5;
+        }
+    
+        p {
+            font-size: 1.75rem;
+        }
+    } 
+}

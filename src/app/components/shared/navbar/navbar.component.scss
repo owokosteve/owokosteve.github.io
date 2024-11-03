@@ -4,7 +4,7 @@ header {
 
 .navbar-brand {
     color: var(--light-75);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-family: "roboto_condensedbold", serif;
     letter-spacing: .1rem;
     line-height: 1.5;
@@ -20,10 +20,14 @@ header {
     text-align: right;
 }
 .nav-link {
-    font-size: 1.15rem;
+    font-size: 2rem;
     color: var(--light-50);
+    line-height: 1.5;
+    letter-spacing: .01rem;
     cursor: pointer;
+    text-align: center;
 }
+
 .navbar-toggler {
     background-color: var(--light-75) !important;
 }
@@ -34,4 +38,10 @@ header {
 
 .nav-link:hover{
     color: var(--light-75) !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-link {
+        font-size: 1.125rem;
+    }
 }
