@@ -29,8 +29,9 @@ header {
 }
 
 .navbar-toggler {
-    background-color: var(--light-75) !important;
+    background: var(--light-75) !important;
 }
+
 .active {
     color: var(--light-75) !important;
 }

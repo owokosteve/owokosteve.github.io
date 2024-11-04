@@ -1,40 +1,47 @@
-#hero { position: relative;}
-#hero img { width: 100%; }
-h1 { color: white; }
-h2:hover { color: var(--secondary);  }
-#intro { background-color: transparent; margin-top: 30px; margin-bottom: 50px;}
-h3 { font-size: 2.3rem; color: var(--dark); font-weight: 400; margin-bottom: 10px;}
-p { color: #444; font-size: 1.1rem; line-height: 1.5;}
-#hero figcaption { font-size: .75em; font-style: italic; text-align: end;}
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
+// HERO SECTION 
+#hero { 
+    position: relative; 
 
-    h1 {
-        font-size: 3rem;
-        color: var(--light-75);
-        line-height: 1.2;
+    figure {
+        .small-image { display: block; width: 100%;}
+        .large-image { display: none; }
+        figcaption { font-size: .75em; font-style: italic; text-align: end;}
     }
-    p { 
-        font-size: 1.6rem;
-        color: var(--light-50);
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
     
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .hero-text{
         h1 {
+            font-family: "gaeguregular";
+            font-size: 3.5rem;
+            color: var(--light-75);
             line-height: 1.2;
         }
-    
-        p {
-            font-size: 1.65rem;
+
+        p { 
+            font-size: 1.5rem;
+            color: var(--light-50);
         }
-    } 
+    }
+
+@media only screen and (min-width: 768px) {
+    .large-image { display: block !important; }
+    .small-image { display: none !important;}
 }
+
+@media only screen and (min-width: 1024px) {}
+
+}
+
+
+
+
+
+#intro { background-color: transparent; margin-top: 30px; margin-bottom: 50px;}
+h3 { font-size: 2.3rem; color: var(--dark); font-weight: 400; margin-bottom: 10px;}
