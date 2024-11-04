@@ -21,11 +21,12 @@
             font-family: "gaeguregular";
             font-size: 3.5rem;
             color: var(--light-75);
-            line-height: 1.2;
+            line-height: 1;
+            letter-spacing: -.2rem;
         }
 
         p { 
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--light-50);
         }
     }
@@ -39,9 +40,17 @@
 
 }
 
+#intro { 
+    h2 {
+        font-family: "gaeguregular";
+        font-size: 2.5rem;
+        color: var(--secondary);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
 
 
 
-
-#intro { background-color: transparent; margin-top: 30px; margin-bottom: 50px;}
-h3 { font-size: 2.3rem; color: var(--dark); font-weight: 400; margin-bottom: 10px;}

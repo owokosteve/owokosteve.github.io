@@ -35,11 +35,6 @@
     --tertiary: #13c4a5;
 }
 
-.limited {
-    max-width: 1400px;
-    margin: 0 auto; 
-}
-
 html body {
     height: 100%;
 }
@@ -56,10 +51,15 @@ body {
 
 h1, h2, h3, h4 {
     font-family: "cocogooseprotrialdarkmode";
-    letter-spacing: .1rem;
-    line-height: 1.5;
+    letter-spacing: .01rem;
+    line-height: 1.2;
 }
 
 p, li {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+}
+
+.limited {
+    max-width: 1400px;
+    margin: 0 auto; 
 }
