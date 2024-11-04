@@ -1,0 +1,25 @@
+.about {
+    background-color: var(--light-75);
+    padding: 20px;
+    max-width: 750px;
+
+    li {
+        line-height: 1.8;
+        list-style-type: disc;
+    }
+
+    a {
+        color: var(--secondary);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about {
+        padding: 35px;
+        margin-top: 3rem;
+    }
+}

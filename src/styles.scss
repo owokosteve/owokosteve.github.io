@@ -50,13 +50,16 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: "cocogooseprotrialdarkmode";
-    letter-spacing: .01rem;
-    line-height: 1.2;
+    font-family: "gaeguregular";
+    color: var(--secondary);
+    // letter-spacing: .01rem;
+    line-height: 1.3;
+    font-size: 2.5rem;
 }
 
 p, li {
     font-size: 1.1rem;
+    color: var(--primary);
 }
 
 .limited {
