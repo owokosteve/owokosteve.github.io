@@ -44,7 +44,7 @@
           },
           "configurations": {
             "production": {
-              "outputPath": "dist",
+              "outputPath": "dist/owokosteve/browser",
               "budgets": [
                 {
                   "type": "initial",
