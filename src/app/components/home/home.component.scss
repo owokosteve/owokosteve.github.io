@@ -1,34 +1,27 @@
 // HERO SECTION 
 #hero { 
-    position: relative; 
-
-    figure {
-        .small-image { display: block; width: 100%;}
-        .large-image { display: none; }
-        figcaption { font-size: .75em; font-style: italic; text-align: end;}
-    }
+    display: flex;
+    align-items: center;
+    height: 50vh;
 
     .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        width: 100%;
-    
+        margin: 0 auto;
+         .rounded { border-radius: 50% !important;}
+
         h1 {
             font-family: "gaeguregular";
-            font-size: 3.5rem;
-            color: var(--light-75);
+            font-size: 2.3rem;
+            color: var(--primary);
             line-height: 1;
-            letter-spacing: -.2rem;
+            letter-spacing: -.15rem;
+            margin: 0;
         }
 
         p { 
-            font-size: 1.3rem;
+            font-size: 1rem;
             color: var(--light-50);
         }
+    }
     }
 
 @media only screen and (min-width: 768px) {
@@ -38,12 +31,10 @@
 
 @media only screen and (min-width: 1024px) {}
 
-}
-
 #intro { 
     h2 {
         font-family: "gaeguregular";
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: var(--secondary);
     }
 }
@@ -51,6 +42,3 @@
 @media only screen and (min-width: 768px) {
     
 }
-
-
-
