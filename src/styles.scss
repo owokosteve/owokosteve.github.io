@@ -62,16 +62,9 @@ p, li {
     color: var(--primary);
 }
 
-.limited {
-    background-color: #fff !important;
-    width: 90vw;
-    margin: 0 auto;
-}
-
 @media only screen and (min-width: 768px) {
-    .limited {
-        width: 75vw;
+    body {
+        width: 75vw ;
         margin: 0 auto;
-        background-color: #fff !important;
     }
 }
