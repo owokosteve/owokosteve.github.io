@@ -1,0 +1,26 @@
+.blog {
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+
+        .card {
+            background-color: var(--light-75);
+
+            .card-body {
+
+                .card-title {
+                    font-size: 1.75rem;
+                    line-height: 1.1;
+                }
+
+                .blog-meta, .blog-footer{
+                    span {
+                        font-size: .85rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

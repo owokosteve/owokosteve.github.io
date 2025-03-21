@@ -1,0 +1,34 @@
+<div class="blog-details">
+    @if (blog) {
+        <section class="blog-header border-bottom mb-3">
+            <h1 class="blog-title fs-3">{{ blog.title }}</h1>
+            <div class="meta my-3">
+                <span class="px-2 py-1"><i class="bi bi-stopwatch"></i> {{ +blog.read_time / 60 }} min read</span>
+                {{ "  " }}
+                <span class="px-2 py-1"><i class="bi bi-person"></i> By {{ blog.author }}</span>
+                {{ "  " }}
+                <span class="px-2 py-1"><i class="bi bi-calendar"></i> {{ blog.date_published | date:'mediumDate'}}</span>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <img src="{{ blog.image }}" alt="{{ blog.title }}" class="img-fluid mb-3 rounded">
+            <p>{{ blog.content }}</p>
+        </section>
+
+        <section class="blog-share my-5">
+            <p>Share this article:</p>
+            <div class="share-btns">
+                <i class="bi bi-twitter-x fs-3"></i>
+                <i class="bi bi-facebook fs-3 px-3"></i>
+                <i class="bi bi-linkedin fs-3 "></i>
+            </div>
+        </section>
+
+        <section class="blog-comments">
+            <h3>Leave a comment</h3>
+            <textarea name="" id="" cols="35" rows="10"></textarea>
+            <p>No comments yet. Be the first to comment!</p>
+        </section>
+    }
+</div>
