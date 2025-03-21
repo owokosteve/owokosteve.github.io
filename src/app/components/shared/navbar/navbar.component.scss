@@ -5,13 +5,11 @@ header {
 
 .nav-link {
     font-size: 2rem;
-    color: var(--secondary);
+    color: var(--secondary) !important;
     cursor: pointer;
     text-align: center;
     padding: 10px 5px;
-    // text-transform: uppercase;
-    text-decoration: underline;
-    
+    font-weight: 600 !important;
 }
 
 .navbar-toggler {
@@ -24,21 +22,30 @@ header {
 
 .nav-link:hover{
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
     header {
         // background-color: var(--light-75) !important;
         margin-top: 7.5vh;
-    }
+
+        .nav-link {
+            font-size: 2rem;
+            font-weight: 500 !important;
+            line-height: 1;
     
+            .bi { font-size: 1.2rem;}
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
     .nav-link {
-        font-size: 1rem;
+        font-size: 1.02em !important;
         font-weight: 500;
         line-height: 1;
 
         .bi { font-size: 1.2rem;}
     }
-
 }

@@ -1,0 +1,14 @@
+{
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.gpuAcceleration": "off",
+    "files.watcherExclude": {
+        "**/node_modules**": true
+    },
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "typescript.disableAutomaticTypeAcquisition": true
+
+}
