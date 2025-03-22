@@ -1,10 +1,10 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
-import { provideMarkdown } from 'ngx-markdown';
+import { MarkdownModule, provideMarkdown } from 'ngx-markdown';
 import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
@@ -12,6 +12,9 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes), provideClientHydration(), 
     provideMarkdown(), 
-    provideHttpClient()
+    provideHttpClient(),
+    importProvidersFrom(
+      MarkdownModule.forRoot()
+    )
   ]
 };
