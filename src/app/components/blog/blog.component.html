@@ -23,7 +23,7 @@
                         </span>
                     </p>
                     <img src="imgs/Kings-Palace-in-Rwanda.jpg" alt="Image" class="img-fluid card-img">
-                    <p class="card-text py-2">{{ blog.content | slice:0:150 }}...
+                    <p class="card-text py-2">{{ blog.summary | slice:0:150 }}...
                     <span class="read-more"><a [routerLink]="['/blog', blog.id]">Continue reading</a></span>
                     </p>
                     <p class="blog-footer row border-top mb-0">
