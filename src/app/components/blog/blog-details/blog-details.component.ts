@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Blog, BLOGS } from '../../../data/blog-data';
+import { BLOGS, Blog } from '../../../../../public/data/blog-data';
 import { ActivatedRoute } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { CommonModule } from '@angular/common';

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { BLOGS, Blog } from '../../data/blog-data';
+import { Blog, BLOGS } from '../../../../public/data/blog-data';
 import { SlicePipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
