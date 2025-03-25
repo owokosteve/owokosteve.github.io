@@ -10,6 +10,7 @@
         h1 {
             font-family:  'andika_new_basicregular' !important;
             font-size: 1.75rem;
+            font-weight: 600;
             color: var(--primary) !important;
             line-height: 1.2;
             letter-spacing: .015rem !important;
@@ -32,9 +33,9 @@
 
 #intro { 
     h2 {
-        font-size: 2rem;
-        font-family: "gaeguregular";
-        font-weight: 500 !important;
+        font-size: 1.75rem;
+        font-family: "gaeguregular" !important;
+        // font-weight: 500 !important;
         color: var(--secondary) !important;
         text-align: start;
     }

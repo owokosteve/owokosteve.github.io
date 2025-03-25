@@ -1,19 +1,19 @@
 <div class="blog">
     <section class="intro">
-        <h2 class="my-3">Blog</h2>
+        <h2 class="my-3 text-center">Blog</h2>
         <p class="mb-4 border-bottom pb-4">Explore my latest thoughts on web dev, coding and tech trends. 
             Dive into insightful articles designed to inform, inspire and level up your skills.
         </p>
     </section>
-
+ 
     <section>
         <div class="card-grid">
             @for (blog of blogs; track blog.id) {
             <div  title="{{ blog.title }}" class="card card-grid-card shadow" id="blog-{{ blog.id }}">
                 <div class="card-body p-3">
-                    <h5 class="card-title mt-2">
+                    <h3 class="card-title mt-2">
                         <a href="" [routerLink]="['/blog', blog.id]">{{ blog.title }}</a>
-                    </h5>
+                    </h3>
                     <p class="blog-meta row border-bottom">
                         <span class="read-time small text-body-secondary col-6 text-start mb-2">
                             <i class="bi bi-stopwatch"></i> {{ +blog.read_time / 60 }} min read
